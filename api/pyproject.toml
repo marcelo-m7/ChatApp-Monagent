@@ -1,0 +1,16 @@
+[project]
+name = "my-assistant"
+version = "0.1.0"
+description = "Desenvolvimento de um AI Agent usando FastAPI + Pydantic com uso miniminzado de bibliotecas de integrações de AI."
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi",
+    "uvicorn",
+    "ollama",
+    "python-dotenv",
+    "requests",
+]
+
+[tool.poetry.scripts]
+my-assistant = "src.main:app"
